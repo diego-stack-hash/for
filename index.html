@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tp 5 </title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>remontando los tp: Modelo de Caja, Posicionamiento, Display y Google Fonts</h1>
+  </header>
+
+<main>
+  <section class="ejercicio">
+  <h2 class="titulo-ejercicio">Ejercicio 1</h2>
+  <div class="contenido-ejercicio">
+  <section id="ejercicio1">
+    <h2>Modelo de Caja</h2>
+    <div class="box content-box">Content-Box :/</div>
+    <div class="box border-box">Border-Box </div>
+  </section>
+</div>
+</section>
+  
+<section class="ejercicio">
+  <h2 class="titulo-ejercicio">Ejercicio 2</h2>
+  <div class="contenido-ejercicio">
+    <section id="ejercicio2">
+      <h2>Posicionamiento</h2>
+      <div class="posicion static">Posición Static</div>
+      <div class="posicion relative">Posición Relative</div>
+      <div class="posicion-wrapper">
+      <div class="posicion absolute">Posición Absolute</div>
+      </div>
+      <div class="posicion fixed"> HOLA, obviamente es fixed</div>
+    </section>
+  </div>
+</section>
+
+<section class="ejercicio">
+  <h2 class="titulo-ejercicio">Ejercicio 3</h2>
+  <div class="contenido-ejercicio">
+    <section id="ejercicio3">
+      <h2>Propiedad Display</h2>
+      <div class="display inline">Elemento Inline</div>
+      <div class="display block">Elemento bla bla block :v</div>
+      <div class="display inline-block">Elemento Inline-Block</div>
+      <div class="hover-container">¿?</div>
+      <div class="oculto">khe paso master</div>
+    </section>
+  </div>
+</section>
+  
+<section class="ejercicio">
+  <h2 class="titulo-ejercicio">Ejercicio 4</h2>
+  <div class="contenido-ejercicio">
+    <section id="ejercicio4">
+      <h2 class="fuente-google">Google Fonts</h2>
+      <p class="fuente-google">DE TODOS QUE HABIA, SOLAMENTE ME GUSTO EL "LOBSTER" .</p>
+      <p>no tenia imaginacion para hacer algo en esta pagina por eso lo veo algo vacio:/.</p>
+    </section>
+    </main>
+  </div>
+</section>
+
+  <footer>
+    <p>Desarrollado por un estudiante aplicado arrhe, que voy atrasado con los tp xD</p>
+  </footer>
+
+  
+  <script>
+  document.querySelectorAll('.titulo-ejercicio').forEach(titulo => {
+    titulo.addEventListener('click', () => {
+      const contenido = titulo.nextElementSibling;
+      contenido.style.display = 
+        contenido.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+
+  document.querySelectorAll('.contenido-ejercicio').forEach(div => {
+    div.style.display = 'none';
+  });
+</script>
+
+  
+  
+</body>
+</html>
